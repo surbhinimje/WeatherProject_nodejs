@@ -10,7 +10,7 @@ res.sendFile(__dirname+ "/index.html");
 app.post("/", function(req,res){
 
 const query=req.body.cityName;
-  const url="https://api.openweathermap.org/data/2.5/weather?q="+query+"&appid=c10f1d213dac7d5f621ae375a01ebf74";
+  const url="https://api.openweathermap.org/data/2.5/weather?q="+query+"&appid";
 https.get(url , function(response){
   console.log(response.statusCode);
 
